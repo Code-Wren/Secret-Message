@@ -1,0 +1,40 @@
+let secretMessage = ['Learning ', 'is ', 'not ', 'about ', 'what ', 'you ', 'get ', 'easily ', 'the ', 'first ', 'time, ', 'it ', 'is ', 'about ', 'what ', 'you ', 'can ', 'figure ', 'out. ', '-2015, ', 'Chris ', 'Pine, ', 'Learn ', 'JavaScript'];
+
+// create an array method to remove the last string of the array.
+secretMessage.pop();
+
+console.log(secretMessage);
+
+// logging the .length array. Output => 23
+console.log(secretMessage.length);
+
+// added an array method to add words 'to' and 'program' as seperate strings to the end of the array.
+secretMessage.push('to', 'program');
+
+console.log(secretMessage);
+
+// updating the array to replace the word 'easily' with 'right' by accessing the index of the array.
+secretMessage[7] = 'right ';
+
+console.log(secretMessage);
+
+// used an array method to remove the first string of the array.
+secretMessage.shift();
+
+console.log(secretMessage);
+
+// used array method to add the string 'Programming' to the beginning of the array.
+secretMessage.unshift('Programmning ');
+
+console.log(secretMessage);
+
+// used an array method to remove the strings 'get, right, the, first, time,, and replace them with the single string 'know'.
+let pos = 6
+let n = 5
+
+let removedItems = secretMessage.splice(pos, n, 'know, ');
+
+console.log(secretMessage);
+
+// used an array method to print the secret message as a sentance using .join();
+console.log(secretMessage.join(''));
